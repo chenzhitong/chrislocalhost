@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <style>
+        html { height: 100%; margin: 0; }
+        body { height: 100%; margin: 0; font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif; background-repeat: no-repeat; background-position: center; background-size: cover; }
+        .container { padding: 100px 0; width: 80%; margin: auto; }
+        form { margin: 30px 0; }
+        form div { display: inline-block; vertical-align: middle; padding: 3px 3px 3px 10px; border: 1px #e5e5e5 solid; background-color: #fff; }
+        .searchbox { border: 0; width: 300px; font-size: 18px; margin: 4px 5px 0 0; padding: 0; height: 30px; outline: none; }
+        .searchboxSubmit { height: 37px; width: 37px; vertical-align: top; }
+        .bing .searchboxSubmit { border: 5px solid #0c8484; background: #0c8484 url('https://cn.bing.com/s/a/hpc14.png') no-repeat; background-position: -224px -53px; }
+        .baidu .searchboxSubmit { border: 5px solid #317ef3; background: #317ef3 url('https://cn.bing.com/s/a/hpc14.png') no-repeat; background-position: -224px -53px; }
+        .google .searchboxSubmit { border: 5px solid #ea4335; background: #ea4335 url('https://cn.bing.com/s/a/hpc14.png') no-repeat; background-position: -224px -53px; }
+        .sogou .searchboxSubmit { border: 5px solid #f74416; background: #f74416 url('https://cn.bing.com/s/a/hpc14.png') no-repeat; background-position: -224px -53px; }
+        a, a:hover, a:active, a:focus { text-decoration: none; font-size: 16px; color: #0078d7; }
+        .link { position: absolute; left: 10%; bottom: 30px; width: 80%; padding: 0; margin: auto; background-color: rgba(255, 255, 255, .8); }
+        .link a { display: inline-block; padding: 8px 16px; }
+        a.copyright { position: absolute; right: 50px; bottom: 50px; width: 20px; height: 20px; display: block; color: white; font-size: 24px; }
+        @@media only screen and (max-width: 767px) { .searchbox { width: 200px; } }
+    </style>
+</head>
+<body style="background-image:url('@ViewBag.url')">
+    <div class="container">
+        <form class="bing" method="get" action="http://global.bing.com/search?q=&setmkt=en-us&setlang=en-us&FORM=SECNEN">
+            <div>
+                <input type="text" placeholder="Bing" class="searchbox" name="q" /><button class="searchboxSubmit" type="submit"></button>
+            </div>
+        </form>
+        <form class="sogou" method="get" action="https://www.sogou.com/web?">
+            <div>
+                <input type="text" placeholder="搜狗" class="searchbox" name="query" /><button class="searchboxSubmit" type="submit"></button>
+            </div>
+        </form>
+        <form class="baidu" method="get" action="https://www.baidu.com/s?">
+            <div>
+                <input type="text" placeholder="百度" class="searchbox" name="wd" /><button class="searchboxSubmit" type="submit"></button>
+            </div>
+        </form>
+        <form class="google" method="get" action="https://www.google.com.sg/webhp?hl=zh-CN#hl=zh-CN">
+            <div>
+                <input type="text" placeholder="Google" class="searchbox" name="q" /><button class="searchboxSubmit" type="submit"></button>
+            </div>
+        </form>
+    </div>
+    <div class="link">
+        <a target="_blank" href="http://weibo.com/chenzhitongchrischen/home">微博</a>
+        <a target="_blank" href="http://www.csdn.net/">csdn</a>
+        <a target="_blank" href="http://www.cnblogs.com/">博客园</a>
+        <a target="_blank" href="http://mobile.jd.com">京东通信</a>
+        <a target="_blank" href="https://www.taobao.com">淘宝网</a>
+        <a target="_blank" href="http://www.w3school.com.cn/">W3School</a>
+        <a target="_blank" href="http://www.bootcss.com/">BootStrap</a>
+        <a target="_blank" href="http://www.iconfont.cn/">IconFont</a>
+        <a target="_blank" href="http://www.uisdc.com/">优设网</a>
+        <a target="_blank" href="http://www.zhihu.com/">知乎</a>
+        <br />
+        <a target="_blank" href="http://www.bilibili.com/video/tech-future-digital-1.html">bilibili</a>
+        <a target="_blank" href="http://www.youku.com">优酷</a>
+        <a target="_blank" href="http://wp.ithome.com/wpnews/">IT之家</a>
+        <a target="_blank" href="http://www.windowscentral.com/">Windows Central</a>
+        <br />
+        <a target="_blank" href="http://www.qunar.com">去哪儿</a>
+        <a target="_blank" href="https://i.ch.com/Orders/AirOrders">春秋航空</a>
+        <a target="_blank" href="http://www.12306.cn/">12306</a>
+        <a target="_blank" href="https://www.alipay.com/">支付宝</a>
+        <a target="_blank" href="https://creditcardapp.bankcomm.com/idm/sso/login.html?service=https://creditcardapp.bankcomm.com/member/shiro-cas">信用卡</a>
+        <a target="_blank" href="http://ditu.baidu.com/">地图</a>
+        <a target="_blank" href="http://www.80s.tw/">抢先版电影</a>
+        <a target="_blank" href="https://www.antshares.org/">小蚁官网</a>
+        <a target="_blank" href="https://app.antshares.org/">小蚁钱包</a>
+        <a target="_blank" href="https://www.antshares.org/">antfans</a>
+        <a target="_blank" href="https://weangel.com/">微天使</a>
+        <a target="_blank" href="http://www.onchain.com/">Onchain</a>
+        <a target="_blank" href="https://github.com/AntShares/AntSharesApp">github</a>
+        <a target="_blank" href="https://www.hotmail.com/">hotmail</a>
+        <a target="_blank" href="https://vcagecom56739.sharepoint.com/sites/weeklyreport/_layouts/15/GroupsDocuments.aspx">Office365邮箱</a>
+    </div>
+    <a class="copyright" href="@ViewBag.copyrightlink" title="@ViewBag.copyright">i</a>
+</body>
+</html>
