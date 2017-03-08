@@ -1,17 +1,17 @@
 ﻿using System.Net;
 using System.Timers;
-using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace chris_localhost
+namespace HomePage
 {
-    public class MvcApplication : HttpApplication
+    public class MvcApplication : System.Web.HttpApplication
     {
-        Timer t;
         protected void Application_Start()
         {
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Timer t;
             t = new Timer(60000);
             t.Elapsed += T_Elapsed;
             t.Start();

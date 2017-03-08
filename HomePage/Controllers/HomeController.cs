@@ -5,11 +5,19 @@ using System.Timers;
 using System.Web.Mvc;
 using System.Xml;
 
-namespace chris_localhost.Controllers
+namespace HomePage.Controllers
 {
+    static class CViewBag
+    {
+        public static string url;
+        public static string copyright;
+        public static string copyrightlink;
+    }
+
     public class HomeController : Controller
     {
         Timer t = new Timer(3600000);
+
         public ActionResult Index()
         {
             if (CViewBag.url == null)
