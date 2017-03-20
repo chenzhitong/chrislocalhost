@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息是通过以下项进行控制的
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("HomePage")]
+[assembly: AssemblyTitle("HomePageMVC5")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HomePage")]
+[assembly: AssemblyProduct("HomePageMVC5")]
 [assembly: AssemblyCopyright("版权所有(C)  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于 typelib 的 ID
-[assembly: Guid("970a8fa9-7c9c-464a-82da-d35762117ccc")]
+[assembly: Guid("3525ba20-5397-4c7e-8092-f17bbdc0b92f")]
 
 // 程序集的版本信息由下列四个值组成:
 //

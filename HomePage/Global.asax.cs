@@ -1,10 +1,8 @@
 ﻿using System.Net;
 using System.Timers;
-using System.Web.Mvc;
-using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace HomePage
+namespace HomePageMVC5
 {
     public class MvcApplication : System.Web.HttpApplication
     {

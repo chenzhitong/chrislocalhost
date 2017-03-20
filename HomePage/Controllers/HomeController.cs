@@ -5,7 +5,7 @@ using System.Timers;
 using System.Web.Mvc;
 using System.Xml;
 
-namespace HomePage.Controllers
+namespace HomePageMVC5.Controllers
 {
     static class CViewBag
     {
